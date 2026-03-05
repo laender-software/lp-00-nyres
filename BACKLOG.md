@@ -2,9 +2,6 @@
 
 ## Pendente
 
-### Performance
-- [ ] Comprimir fotos grandes (design-1.png = 953K, design-2.png = 1.1M)
-
 ### SEO
 - [ ] Alt text revisado por Nyres
 
@@ -25,8 +22,11 @@
 - [ ] /contato — formulário + mapa + WhatsApp
 
 ### Infra
-- [ ] Confirmar propagação DNS nyresedim.com.br
 - [ ] SSL/HTTPS automático via Vercel
+
+### Questionário
+- [ ] Enviar questionário para Nyres responder (docs/questionario-nyres.md)
+- [ ] Usar respostas para definir persona e expandir FAQ
 
 ## Resolvido
 
@@ -45,3 +45,8 @@
 - [x] Focus styles (ring-2) em todos os elementos interativos (2026-03-05)
 - [x] Aria attributes — hamburger, mobile nav, Instagram (2026-03-05)
 - [x] Tab navigation completa (2026-03-05)
+- [x] Labels de seção: teal-deep + text-lg (2026-03-05)
+- [x] Remove link underlines via `<style is:global>` (2026-03-05)
+- [x] Imagens não usadas deletadas: design-1.png, design-2.png (2026-03-05)
+- [x] Questionário persona/público criado (2026-03-05)
+- [x] DNS propagado e confirmado LIVE (2026-03-05)

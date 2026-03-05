@@ -49,3 +49,13 @@
 - **Data:** 2026-03-05
 - **Decisão:** Usar classes Tailwind com `group`/`group-hover` em vez de `.photo-zoom img` no global.css
 - **Razão:** Astro escopa CSS com `data-astro-cid-*`. Seletores `.wrapper img` não funcionam quando wrapper e img estão em componentes diferentes.
+
+## Labels de seção: teal-deep + 18px
+- **Data:** 2026-03-05
+- **Decisão:** Labels uppercase de seção mudaram de `text-teal text-base` para `text-teal-deep text-lg`
+- **Razão:** Pedro achou o verde pálido demais; queria o mesmo verde do header. Fonte 18px para mais presença.
+
+## Link underlines removidos globalmente
+- **Data:** 2026-03-05
+- **Decisão:** `a { text-decoration: none }` via `<style is:global>` no Layout.astro
+- **Razão:** Tailwind v4 preflight não remove underlines por padrão. Regra no global.css era escopada pelo Astro e não atingia componentes filhos. Precisou de `<style is:global>` separado.

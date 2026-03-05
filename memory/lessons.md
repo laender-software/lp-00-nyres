@@ -28,6 +28,7 @@
 
 ## Astro escopa CSS global causando falha em seletores cross-component
 - **Data:** 2026-03-05
-- **Descoberta:** CSS importado em Layout.astro recebe `[data-astro-cid-XXXX]` em todos os seletores. Seletor `.photo-zoom img` não funciona quando `.photo-zoom` está em Hero.astro e `<img>` é gerado por astro:assets — cada um tem seu próprio cid.
-- **Solução:** Usar `group` + `group-hover:scale-105` no Tailwind (inline no componente, não no CSS global).
-- **Aplicação:** Nunca usar seletores descendentes no global.css quando os elementos estão em componentes Astro separados.
+- **Descoberta:** CSS importado em Layout.astro via `<style>@import</style>` recebe `[data-astro-cid-XXXX]` em todos os seletores. Seletor `.photo-zoom img` não funciona quando `.photo-zoom` está em Hero.astro e `<img>` é gerado por astro:assets — cada um tem seu próprio cid.
+- **Solução 1:** Usar `group` + `group-hover:scale-105` no Tailwind (inline no componente).
+- **Solução 2:** Para regras CSS verdadeiramente globais (ex: `a { text-decoration: none }`), usar `<style is:global>` separado no Layout.astro. Regras no `global.css` importado via `<style>` são ESCOPADAS.
+- **Aplicação:** Nunca assumir que global.css é global no Astro — depende de COMO é importado. `<style>` = scoped. `<style is:global>` = global real.

@@ -26,7 +26,7 @@
 | Micro-animações | ✅ | Scroll reveal, hover zoom, card lift, button glow, stagger |
 | Fotos profissionais | ✅ | Ensaio Tati Motta (3 fotos usadas) + logo |
 | Paleta real da marca | ✅ | Extraída do logo, Instagram e fotos |
-| Domínio custom | ⏳ | DNS configurado, propagação pendente |
+| Domínio custom | ✅ | nyresedim.com.br LIVE |
 | JSON-LD Schema | ✅ | Person (Therapist) + LocalBusiness |
 | Twitter Cards | ✅ | summary_large_image |
 | Astro `<Image>` otimizado | ✅ | 4 componentes migrados, 13 variantes WebP |
@@ -60,7 +60,10 @@
 - [x] prefers-reduced-motion + focus styles + aria (2026-03-05)
 - [x] Header teal-deep, labels de seção em destaque (2026-03-05)
 - [x] Seção "O Método" removida (2026-03-05)
-- [ ] FAQ expandido — elaborar perguntas com Nyres
-- [ ] Questionnaire para Nyres (identificar persona/público)
+- [x] Labels de seção: teal-deep + 18px (2026-03-05)
+- [x] Remove link underlines globalmente (2026-03-05)
+- [x] Remove imagens não usadas — design-1/2.png (2026-03-05)
+- [x] Questionário para Nyres criado — docs/questionario-nyres.md (2026-03-05)
+- [ ] FAQ expandido — aguardando respostas do questionário da Nyres
 - [ ] Conteúdo: duração das sessões, horários, valores (aguardando Nyres)
 - [ ] Páginas internas (/sobre, /pathwork, /atendimento) — futuro
