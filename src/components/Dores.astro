@@ -53,23 +53,23 @@ const dores = [
 <section class="py-16 md:py-28 bg-warm" id="dores">
   <div class="max-w-6xl mx-auto px-6">
     <div class="text-center mb-16 reveal">
-      <p class="text-secondary font-medium text-sm uppercase tracking-widest mb-3">Você se identifica?</p>
-      <h2 class="font-serif text-3xl md:text-4xl font-bold text-brown mb-4">
+      <p class="text-teal font-medium text-sm uppercase tracking-[0.2em] mb-3">Você se identifica?</p>
+      <h2 class="font-serif text-3xl md:text-4xl font-semibold text-brown mb-4">
         Sensação de estagnação, dificuldade de mudar padrões...
       </h2>
-      <p class="text-brown/60 text-lg max-w-2xl mx-auto">
+      <p class="text-brown-light text-lg max-w-2xl mx-auto">
         Se esse é o seu caso, é provável que também perceba:
       </p>
     </div>
 
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
       {dores.map((dor, i) => (
-        <div class="reveal bg-cream rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow border border-sand/20" style={`transition-delay: ${i * 100}ms`}>
-          <h3 class="font-serif text-xl font-semibold text-primary mb-4">{dor.titulo}</h3>
+        <div class="reveal bg-cream rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow border border-sand/30" style={`transition-delay: ${i * 100}ms`}>
+          <h3 class="font-serif text-xl font-semibold text-teal-deep mb-4">{dor.titulo}</h3>
           <ul class="space-y-2">
             {dor.items.map(item => (
-              <li class="text-brown/70 text-sm leading-relaxed flex gap-2">
-                <span class="text-secondary mt-1 flex-shrink-0">•</span>
+              <li class="text-brown-light text-sm leading-relaxed flex gap-2">
+                <span class="text-teal mt-1 flex-shrink-0">•</span>
                 {item}
               </li>
             ))}
@@ -79,7 +79,7 @@ const dores = [
     </div>
 
     <div class="text-center mt-12 reveal">
-      <a href="#contato" class="bg-primary text-cream px-8 py-4 rounded-full font-semibold hover:bg-primary/90 transition-all shadow-lg inline-block">
+      <a href="#contato" class="bg-teal-deep text-white px-8 py-4 rounded-full font-semibold hover:bg-teal transition-all shadow-lg inline-block">
         Agende uma Consulta
       </a>
     </div>

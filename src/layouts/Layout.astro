@@ -5,8 +5,8 @@ interface Props {
 }
 
 const {
-  title = "Nyres Edim | Terapeuta Pathwork",
-  description = "Transforme padrões emocionais com o Método Pathwork. Atendimento individual e grupos de estudos. Presencial em BH e online."
+  title = "Nyres Edim | Terapeuta Pathwork — Autoconhecimento e Espiritualidade",
+  description = "Transforme padrões emocionais com o Método Pathwork®. Mais de 25 anos de experiência. Atendimento individual e grupos de estudos. Presencial em BH e online."
 } = Astro.props;
 ---
 
@@ -24,11 +24,12 @@ const {
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://nyresedim.com.br" />
   <meta property="og:locale" content="pt_BR" />
+  <meta property="og:image" content="https://nyresedim.com.br/images/foto-profissional-1.jpg" />
 
-  <!-- Fonts -->
+  <!-- Fonts: Cormorant Garamond (elegant serif) + Lato (clean sans) -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
 
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -40,7 +41,7 @@ const {
     @import "../styles/global.css";
   </style>
 </head>
-<body class="font-sans text-brown bg-cream">
+<body class="font-sans text-dark bg-cream">
   <slot />
 
   <script>

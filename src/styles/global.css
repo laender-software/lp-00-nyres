@@ -5,21 +5,23 @@ html {
 }
 
 @theme {
-  /* Primary: verde-petróleo profundo — conexão, profundidade */
-  --color-primary: #1a5c52;
-  /* Secondary: dourado suave — espiritualidade, acolhimento */
-  --color-secondary: #b8860b;
-  /* Accent: roxo suave — transformação, consciência */
-  --color-accent: #6b5b95;
-  /* Neutrals */
-  --color-cream: #faf8f5;
-  --color-warm: #f0ebe3;
-  --color-sand: #d4c5a9;
-  --color-brown: #3d2b1f;
-  --color-dark: #1a1a1a;
+  /* Paleta real extraída da identidade visual da Nyres */
+  --color-teal-deep: #1A5C5A;
+  --color-teal: #5E8E91;
+  --color-teal-light: #89AFA8;
+  --color-teal-soft: #B5D5D0;
+  --color-brown: #4A2810;
+  --color-brown-light: #8A7D72;
+  --color-olive: #7A8B4A;
+  --color-cream: #F5F0EB;
+  --color-warm: #EDE6DD;
+  --color-sand: #D4BFA0;
+  --color-gold: #E8D07A;
+  --color-dark: #1A1A1A;
+  --color-white: #FFFFFF;
 
-  --font-serif: 'Playfair Display', 'Georgia', serif;
-  --font-sans: 'Quicksand', 'Inter', system-ui, sans-serif;
+  --font-serif: 'Cormorant Garamond', 'Playfair Display', 'Georgia', serif;
+  --font-sans: 'Lato', 'Inter', system-ui, sans-serif;
 }
 
 /* Scroll reveal animations */

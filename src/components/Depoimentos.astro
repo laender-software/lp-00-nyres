@@ -22,20 +22,20 @@ const depoimentos = [
 <section class="py-16 md:py-28 bg-warm" id="depoimentos">
   <div class="max-w-6xl mx-auto px-6">
     <div class="text-center mb-16 reveal">
-      <p class="text-secondary font-medium text-sm uppercase tracking-widest mb-3">Depoimentos</p>
-      <h2 class="font-serif text-3xl md:text-4xl font-bold text-brown">
+      <p class="text-teal font-medium text-sm uppercase tracking-[0.2em] mb-3">Depoimentos</p>
+      <h2 class="font-serif text-3xl md:text-4xl font-semibold text-brown">
         O que dizem sobre o meu trabalho
       </h2>
     </div>
 
     <div class="grid md:grid-cols-2 gap-8">
       {depoimentos.map((dep, i) => (
-        <div class="reveal bg-cream rounded-2xl p-8 shadow-sm border border-sand/20" style={`transition-delay: ${i * 100}ms`}>
-          <svg class="w-8 h-8 text-secondary/30 mb-4" fill="currentColor" viewBox="0 0 24 24">
+        <div class="reveal bg-cream rounded-2xl p-8 shadow-sm border border-sand/30" style={`transition-delay: ${i * 100}ms`}>
+          <svg class="w-8 h-8 text-sand mb-4" fill="currentColor" viewBox="0 0 24 24">
             <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
           </svg>
-          <p class="text-brown/70 leading-relaxed mb-6 italic">"{dep.texto}"</p>
-          <p class="font-semibold text-primary">— {dep.autor}</p>
+          <p class="text-brown-light leading-relaxed mb-6 italic font-serif text-lg">"{dep.texto}"</p>
+          <p class="font-semibold text-teal-deep">— {dep.autor}</p>
         </div>
       ))}
     </div>

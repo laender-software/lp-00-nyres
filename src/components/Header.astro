@@ -3,19 +3,19 @@
 
 <header class="fixed top-0 w-full bg-cream/95 backdrop-blur-sm z-50 border-b border-sand/30">
   <nav class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-    <a href="/" class="font-serif text-2xl font-semibold text-primary">
-      Nyres Edim
+    <a href="/" class="flex items-center gap-3">
+      <img src="/images/logo.png" alt="Nyres Edim" class="h-10" />
     </a>
 
     <!-- Desktop nav -->
     <ul class="hidden md:flex items-center gap-8 text-sm font-medium">
-      <li><a href="#sobre" class="text-brown/70 hover:text-primary transition-colors">Sobre</a></li>
-      <li><a href="#metodo" class="text-brown/70 hover:text-primary transition-colors">Método</a></li>
-      <li><a href="#como-funciona" class="text-brown/70 hover:text-primary transition-colors">Como Funciona</a></li>
-      <li><a href="#depoimentos" class="text-brown/70 hover:text-primary transition-colors">Depoimentos</a></li>
-      <li><a href="#faq" class="text-brown/70 hover:text-primary transition-colors">FAQ</a></li>
+      <li><a href="#sobre" class="text-brown-light hover:text-teal-deep transition-colors">Sobre</a></li>
+      <li><a href="#metodo" class="text-brown-light hover:text-teal-deep transition-colors">Pathwork</a></li>
+      <li><a href="#como-funciona" class="text-brown-light hover:text-teal-deep transition-colors">Como Funciona</a></li>
+      <li><a href="#depoimentos" class="text-brown-light hover:text-teal-deep transition-colors">Depoimentos</a></li>
+      <li><a href="#faq" class="text-brown-light hover:text-teal-deep transition-colors">FAQ</a></li>
       <li>
-        <a href="#contato" class="bg-primary text-cream px-5 py-2.5 rounded-full hover:bg-primary/90 transition-colors">
+        <a href="#contato" class="bg-teal-deep text-white px-5 py-2.5 rounded-full hover:bg-teal transition-colors">
           Agende uma Consulta
         </a>
       </li>
@@ -32,13 +32,13 @@
   <!-- Mobile menu -->
   <div id="mobile-menu" class="hidden md:hidden bg-cream border-t border-sand/30 px-6 pb-4">
     <ul class="flex flex-col gap-4 text-sm font-medium">
-      <li><a href="#sobre" class="text-brown/70 hover:text-primary">Sobre</a></li>
-      <li><a href="#metodo" class="text-brown/70 hover:text-primary">Método</a></li>
-      <li><a href="#como-funciona" class="text-brown/70 hover:text-primary">Como Funciona</a></li>
-      <li><a href="#depoimentos" class="text-brown/70 hover:text-primary">Depoimentos</a></li>
-      <li><a href="#faq" class="text-brown/70 hover:text-primary">FAQ</a></li>
+      <li><a href="#sobre" class="text-brown-light hover:text-teal-deep">Sobre</a></li>
+      <li><a href="#metodo" class="text-brown-light hover:text-teal-deep">Pathwork</a></li>
+      <li><a href="#como-funciona" class="text-brown-light hover:text-teal-deep">Como Funciona</a></li>
+      <li><a href="#depoimentos" class="text-brown-light hover:text-teal-deep">Depoimentos</a></li>
+      <li><a href="#faq" class="text-brown-light hover:text-teal-deep">FAQ</a></li>
       <li>
-        <a href="#contato" class="inline-block bg-primary text-cream px-5 py-2.5 rounded-full text-center">
+        <a href="#contato" class="inline-block bg-teal-deep text-white px-5 py-2.5 rounded-full text-center">
           Agende uma Consulta
         </a>
       </li>
@@ -50,7 +50,6 @@
   const toggle = document.getElementById('menu-toggle');
   const menu = document.getElementById('mobile-menu');
   toggle?.addEventListener('click', () => menu?.classList.toggle('hidden'));
-  // Close menu on link click
   menu?.querySelectorAll('a').forEach(a => {
     a.addEventListener('click', () => menu?.classList.add('hidden'));
   });

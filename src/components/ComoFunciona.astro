@@ -31,11 +31,11 @@ const etapas = [
 <section class="py-16 md:py-28 bg-cream" id="como-funciona">
   <div class="max-w-6xl mx-auto px-6">
     <div class="text-center mb-16 reveal">
-      <p class="text-secondary font-medium text-sm uppercase tracking-widest mb-3">Processo terapêutico</p>
-      <h2 class="font-serif text-3xl md:text-4xl font-bold text-brown">
+      <p class="text-teal font-medium text-sm uppercase tracking-[0.2em] mb-3">Processo terapêutico</p>
+      <h2 class="font-serif text-3xl md:text-4xl font-semibold text-brown">
         Como funciona meu trabalho
       </h2>
-      <p class="text-brown/60 text-lg mt-4 max-w-2xl mx-auto">
+      <p class="text-brown-light text-lg mt-4 max-w-2xl mx-auto">
         Meu trabalho é estruturado, acolhedor e voltado para transformar padrões emocionais de forma profunda e consciente.
       </p>
     </div>
@@ -43,19 +43,19 @@ const etapas = [
     <div class="space-y-8 max-w-3xl mx-auto">
       {etapas.map((etapa, i) => (
         <div class="reveal flex gap-6 items-start" style={`transition-delay: ${i * 100}ms`}>
-          <div class="flex-shrink-0 w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center">
-            <span class="font-serif text-xl font-bold text-primary">{etapa.numero}</span>
+          <div class="flex-shrink-0 w-14 h-14 rounded-full bg-teal-deep/10 flex items-center justify-center">
+            <span class="font-serif text-xl font-bold text-teal-deep">{etapa.numero}</span>
           </div>
           <div>
             <h3 class="font-serif text-xl font-semibold text-brown mb-2">{etapa.titulo}</h3>
-            <p class="text-brown/60 leading-relaxed">{etapa.descricao}</p>
+            <p class="text-brown-light leading-relaxed">{etapa.descricao}</p>
           </div>
         </div>
       ))}
     </div>
 
     <div class="text-center mt-12 reveal">
-      <a href="#contato" class="border-2 border-primary text-primary px-8 py-4 rounded-full font-semibold hover:bg-primary hover:text-cream transition-all inline-block">
+      <a href="#contato" class="border-2 border-teal-deep text-teal-deep px-8 py-4 rounded-full font-semibold hover:bg-teal-deep hover:text-white transition-all inline-block">
         Agendar Atendimento
       </a>
     </div>
