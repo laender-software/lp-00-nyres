@@ -4,6 +4,10 @@ html {
   scroll-behavior: smooth;
 }
 
+a {
+  text-decoration: none;
+}
+
 @theme {
   /* Paleta real extraída da identidade visual da Nyres */
   --color-teal-deep: #1A5C5A;
