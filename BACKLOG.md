@@ -3,19 +3,13 @@
 ## Pendente
 
 ### Performance
-- [ ] Migrar `<img>` para Astro `<Image>` (otimização automática, WebP/AVIF)
 - [ ] Comprimir fotos grandes (design-1.png = 953K, design-2.png = 1.1M)
-- [ ] Preload hero image + critical fonts
 
 ### SEO
-- [ ] JSON-LD Schema (Therapist + LocalBusiness, endereço BH)
-- [ ] Twitter Card meta tags
 - [ ] Alt text revisado por Nyres
 
 ### Acessibilidade
-- [ ] `prefers-reduced-motion` — desativar animações
-- [ ] Testar contraste de cores (WCAG AA)
-- [ ] Tab navigation completa
+- [ ] Testar contraste de cores (WCAG AA) — ferramenta externa
 
 ### Conteúdo
 - [ ] Confirmar duração das sessões (FAQ aproximado)
@@ -43,3 +37,11 @@
 - [x] Micro-animações implementadas (2026-03-05)
 - [x] Deploy Vercel + DNS configurado (2026-03-05)
 - [x] WhatsApp real configurado (2026-03-05)
+- [x] Migrar `<img>` para Astro `<Image>` — 4 componentes, 13 variantes WebP (2026-03-05)
+- [x] Preload hero image + critical fonts (2026-03-05)
+- [x] JSON-LD Schema — Person (Therapist) + LocalBusiness (2026-03-05)
+- [x] Twitter Card meta tags (2026-03-05)
+- [x] `prefers-reduced-motion` — CSS + JS (2026-03-05)
+- [x] Focus styles (ring-2) em todos os elementos interativos (2026-03-05)
+- [x] Aria attributes — hamburger, mobile nav, Instagram (2026-03-05)
+- [x] Tab navigation completa (2026-03-05)

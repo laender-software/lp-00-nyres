@@ -27,9 +27,12 @@
 | Fotos profissionais | ✅ | Ensaio Tati Motta (3 fotos usadas) + logo |
 | Paleta real da marca | ✅ | Extraída do logo, Instagram e fotos |
 | Domínio custom | ⏳ | DNS configurado, propagação pendente |
-| JSON-LD Schema | ❌ | Therapist + LocalBusiness |
-| Astro `<Image>` otimizado | ❌ | Usando `<img>` por enquanto |
-| prefers-reduced-motion | ❌ | Animações não respeitam ainda |
+| JSON-LD Schema | ✅ | Person (Therapist) + LocalBusiness |
+| Twitter Cards | ✅ | summary_large_image |
+| Astro `<Image>` otimizado | ✅ | 4 componentes migrados, 13 variantes WebP |
+| prefers-reduced-motion | ✅ | CSS + JS respeitam preferência |
+| Focus styles (a11y) | ✅ | ring-2 em todos os interativos |
+| Aria attributes | ✅ | hamburger, mobile nav, links |
 | robots.txt | ✅ | Configurado |
 | Páginas internas | ❌ | /sobre, /pathwork, /atendimento (futuro) |
 
@@ -52,9 +55,11 @@
 ## Próximos Passos
 
 - [ ] Confirmar propagação DNS
-- [ ] Migrar `<img>` para Astro `<Image>`
-- [ ] Adicionar JSON-LD Schema (Therapist + LocalBusiness)
-- [ ] Implementar prefers-reduced-motion
+- [x] Migrar `<img>` para Astro `<Image>` (2026-03-05)
+- [x] Adicionar JSON-LD Schema (Therapist + LocalBusiness) (2026-03-05)
+- [x] Implementar prefers-reduced-motion (2026-03-05)
+- [x] Twitter Card meta tags (2026-03-05)
+- [x] Focus styles + aria attributes (2026-03-05)
 - [ ] Feedback da Nyres sobre visual/cores
 - [ ] Confirmar duração real das sessões (FAQ tá aproximado)
 - [ ] Adicionar fotos adicionais quando disponíveis
