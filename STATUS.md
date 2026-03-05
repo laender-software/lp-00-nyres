@@ -64,6 +64,8 @@
 - [x] Remove link underlines globalmente (2026-03-05)
 - [x] Remove imagens não usadas — design-1/2.png (2026-03-05)
 - [x] Questionário para Nyres criado — docs/questionario-nyres.md (2026-03-05)
+- [x] SSL/HTTPS confirmado — Vercel gerencia automaticamente (2026-03-05)
+- [ ] Logo: PNG com fundo transparente (aguardando Nyres)
 - [ ] FAQ expandido — aguardando respostas do questionário da Nyres
 - [ ] Conteúdo: duração das sessões, horários, valores (aguardando Nyres)
 - [ ] Páginas internas (/sobre, /pathwork, /atendimento) — futuro

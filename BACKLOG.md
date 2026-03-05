@@ -22,7 +22,7 @@
 - [ ] /contato — formulário + mapa + WhatsApp
 
 ### Infra
-- [ ] SSL/HTTPS automático via Vercel
+- [x] SSL/HTTPS automático via Vercel — Vercel gerencia automaticamente (2026-03-05)
 
 ### Questionário
 - [ ] Enviar questionário para Nyres responder (docs/questionario-nyres.md)
