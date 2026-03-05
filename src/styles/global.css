@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+@theme {
+  /* Primary: verde-petróleo profundo — conexão, profundidade */
+  --color-primary: #1a5c52;
+  /* Secondary: dourado suave — espiritualidade, acolhimento */
+  --color-secondary: #b8860b;
+  /* Accent: roxo suave — transformação, consciência */
+  --color-accent: #6b5b95;
+  /* Neutrals */
+  --color-cream: #faf8f5;
+  --color-warm: #f0ebe3;
+  --color-sand: #d4c5a9;
+  --color-brown: #3d2b1f;
+  --color-dark: #1a1a1a;
+
+  --font-serif: 'Playfair Display', 'Georgia', serif;
+  --font-sans: 'Quicksand', 'Inter', system-ui, sans-serif;
+}
+
+/* Scroll reveal animations */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
