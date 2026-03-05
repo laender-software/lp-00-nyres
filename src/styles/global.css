@@ -4,8 +4,10 @@ html {
   scroll-behavior: smooth;
 }
 
-a {
-  text-decoration: none;
+@layer base {
+  a {
+    text-decoration: none;
+  }
 }
 
 @theme {
