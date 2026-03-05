@@ -62,9 +62,9 @@ const dores = [
       </p>
     </div>
 
-    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-      {dores.map((dor, i) => (
-        <div class="reveal bg-cream rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow border border-sand/30" style={`transition-delay: ${i * 100}ms`}>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 stagger">
+      {dores.map((dor) => (
+        <div class="card-lift bg-cream rounded-2xl p-8 shadow-sm border border-sand/30">
           <h3 class="font-serif text-xl font-semibold text-teal-deep mb-4">{dor.titulo}</h3>
           <ul class="space-y-2">
             {dor.items.map(item => (
@@ -79,7 +79,7 @@ const dores = [
     </div>
 
     <div class="text-center mt-12 reveal">
-      <a href="#contato" class="bg-teal-deep text-white px-8 py-4 rounded-full font-semibold hover:bg-teal transition-all shadow-lg inline-block">
+      <a href="#contato" class="btn-glow bg-teal-deep text-white px-8 py-4 rounded-full font-semibold hover:bg-teal transition-all shadow-lg inline-block">
         Agende uma Consulta
       </a>
     </div>

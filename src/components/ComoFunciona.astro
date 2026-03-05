@@ -42,12 +42,12 @@ const etapas = [
 
     <div class="space-y-8 max-w-3xl mx-auto">
       {etapas.map((etapa, i) => (
-        <div class="reveal flex gap-6 items-start" style={`transition-delay: ${i * 100}ms`}>
-          <div class="flex-shrink-0 w-14 h-14 rounded-full bg-teal-deep/10 flex items-center justify-center">
-            <span class="font-serif text-xl font-bold text-teal-deep">{etapa.numero}</span>
+        <div class="reveal flex gap-6 items-start group" style={`transition-delay: ${i * 120}ms`}>
+          <div class="flex-shrink-0 w-14 h-14 rounded-full bg-teal-deep/10 flex items-center justify-center group-hover:bg-teal-deep group-hover:scale-110 transition-all duration-300">
+            <span class="font-serif text-xl font-bold text-teal-deep group-hover:text-white transition-colors duration-300">{etapa.numero}</span>
           </div>
           <div>
-            <h3 class="font-serif text-xl font-semibold text-brown mb-2">{etapa.titulo}</h3>
+            <h3 class="font-serif text-xl font-semibold text-brown mb-2 group-hover:text-teal-deep transition-colors duration-300">{etapa.titulo}</h3>
             <p class="text-brown-light leading-relaxed">{etapa.descricao}</p>
           </div>
         </div>
@@ -55,7 +55,7 @@ const etapas = [
     </div>
 
     <div class="text-center mt-12 reveal">
-      <a href="#contato" class="border-2 border-teal-deep text-teal-deep px-8 py-4 rounded-full font-semibold hover:bg-teal-deep hover:text-white transition-all inline-block">
+      <a href="#contato" class="btn-glow border-2 border-teal-deep text-teal-deep px-8 py-4 rounded-full font-semibold hover:bg-teal-deep hover:text-white transition-all inline-block">
         Agendar Atendimento
       </a>
     </div>
