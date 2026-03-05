@@ -1,43 +1,65 @@
-# Astro Starter Kit: Minimal
+# site-nyres — Nyres Edim | Terapeuta Pathwork®
 
-```sh
-npm create astro@latest -- --template minimal
+Site profissional para Nyres Edim, terapeuta Pathwork® com mais de 25 anos de experiência em BH.
+
+🌐 **Live:** [nyresedim.com.br](https://nyresedim.com.br) | [site-nyres.vercel.app](https://site-nyres.vercel.app)
+
+## Stack
+
+- [Astro 5](https://astro.build) (static)
+- [Tailwind CSS v4](https://tailwindcss.com)
+- Deploy: [Vercel](https://vercel.com)
+
+## Desenvolvimento
+
+```bash
+npm install
+npm run dev        # http://localhost:4321
+npm run build      # gera dist/
+npm run preview    # preview do build
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Estrutura
 
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
+```
+site-nyres/
 ├── public/
+│   ├── images/          # Fotos profissionais + logo
+│   ├── favicon.svg
+│   └── robots.txt
 ├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
+│   ├── components/      # Seções da landing page
+│   │   ├── Header.astro
+│   │   ├── Hero.astro
+│   │   ├── Dores.astro
+│   │   ├── Pathwork.astro
+│   │   ├── ComoFunciona.astro
+│   │   ├── Depoimentos.astro
+│   │   ├── Sobre.astro
+│   │   ├── FAQ.astro
+│   │   ├── CTAFinal.astro
+│   │   ├── Footer.astro
+│   │   └── WhatsAppButton.astro
+│   ├── layouts/
+│   │   └── Layout.astro
+│   ├── pages/
+│   │   └── index.astro
+│   └── styles/
+│       └── global.css   # @theme tokens + animações
+├── memory/              # Contexto para AI agents
+├── docs/                # Planos e session logs
+├── CLAUDE.md            # Regras pro Claude Code
+├── STATUS.md            # Estado do projeto
+└── BACKLOG.md           # Tarefas pendentes
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## Paleta
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+| Token | Hex | Uso |
+|-------|-----|-----|
+| teal-deep | #1A5C5A | Primária (botões, seções escuras) |
+| teal | #5E8E91 | Acentos, links |
+| sand | #D4BFA0 | Logo, CTAs em fundo escuro |
+| brown | #4A2810 | Texto principal |
+| cream | #F5F0EB | Fundo principal |
+| warm | #EDE6DD | Fundo alternado |
