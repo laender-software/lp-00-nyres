@@ -30,7 +30,22 @@
 - **Decisão:** Extrair tudo via WP REST API e recriar em Astro
 - **Razão:** Conteúdo bem escrito (irmã do Pedro), só o visual estava quebrado
 
-## Deploy Vercel + DNS Registro.br
+## Deploy Vercel + DNS via Registro.br (endereçamento A)
 - **Data:** 2026-03-05
-- **Decisão:** Nameservers direto da Vercel (ns1/ns2.vercel-dns.com) no Registro.br
-- **Razão:** Desvincula totalmente da HostGator, opção mais limpa
+- **Decisão:** Registro.br não aceita nameservers externos — usou DNS próprio com registro tipo A apontando para 76.76.21.21 (Vercel)
+- **Razão:** Única forma que funcionou. Nameservers externos eram revertidos automaticamente pelo Registro.br.
+
+## Seção "O Método" (Pathwork) removida da landing page
+- **Data:** 2026-03-05
+- **Decisão:** Remover seção verde escura com texto sobre o método Pathwork
+- **Razão:** Conteúdo redundante com FAQ; landing mais limpa sem ela. Conteúdo sobre o método vai para FAQ expandido (próxima sessão).
+
+## Header todo em teal-deep
+- **Data:** 2026-03-05
+- **Decisão:** Header fixo 100% teal-deep, links brancos, CTA em sand
+- **Razão:** Solicitação do Pedro para dar mais presença visual ao cabeçalho.
+
+## CSS scoping do Astro quebra seletores descendentes cross-component
+- **Data:** 2026-03-05
+- **Decisão:** Usar classes Tailwind com `group`/`group-hover` em vez de `.photo-zoom img` no global.css
+- **Razão:** Astro escopa CSS com `data-astro-cid-*`. Seletores `.wrapper img` não funcionam quando wrapper e img estão em componentes diferentes.

@@ -3,7 +3,7 @@
 - **Branch:** main
 - **Build:** ✅ passa (Astro static, ~1s)
 - **Deploy:** ✅ Vercel — https://site-nyres.vercel.app
-- **Domínio:** nyresedim.com.br (DNS apontado pra Vercel, aguardando propagação)
+- **Domínio:** nyresedim.com.br ✅ LIVE — DNS via Registro.br (registro A → 76.76.21.21)
 - **Repo:** https://github.com/pedrolaender/site-nyres (privado)
 - **Última atualização:** 2026-03-05
 
@@ -13,10 +13,10 @@
 |---------|--------|-------|
 | Scaffold Astro + Tailwind | ✅ | Astro 5.18, Tailwind v4, Google Fonts |
 | Layout base + SEO | ✅ | OG tags, canonical, sitemap |
-| Header responsivo | ✅ | Sticky, hamburger mobile, scroll shadow |
+| Header responsivo | ✅ | Sticky, hamburger mobile, fundo teal-deep |
 | Hero | ✅ | Foto profissional Tati Motta, 2 CTAs |
 | Dores do público (6 cards) | ✅ | Grid responsivo, card-lift hover |
-| O que é Pathwork | ✅ | Seção teal-deep, foto profissional |
+| O que é Pathwork | ❌ | Removido — conteúdo vai para FAQ expandido |
 | Como Funciona (5 etapas) | ✅ | Timeline com números interativos |
 | Sobre a Nyres | ✅ | Foto, bio, +25 anos experiência |
 | Depoimentos | ✅ | 4 depoimentos reais (M.B., T.S., M.R., L.P.) |
@@ -43,7 +43,7 @@
 | Hospedagem | ✅ Vercel | Plano gratuito, conta pedrolaender |
 | Repo | ✅ GitHub | pedrolaender/site-nyres (privado) |
 | CI/CD | ✅ Auto | Vercel auto-deploy via GitHub push |
-| Domínio | ⏳ | nyresedim.com.br → ns1/ns2.vercel-dns.com (propagando) |
+| Domínio | ✅ | nyresedim.com.br live — DNS Registro.br + registro A |
 
 ## Conteúdo
 
@@ -54,13 +54,13 @@
 
 ## Próximos Passos
 
-- [ ] Confirmar propagação DNS
+- [x] DNS nyresedim.com.br propagado e LIVE (2026-03-05)
 - [x] Migrar `<img>` para Astro `<Image>` (2026-03-05)
-- [x] Adicionar JSON-LD Schema (Therapist + LocalBusiness) (2026-03-05)
-- [x] Implementar prefers-reduced-motion (2026-03-05)
-- [x] Twitter Card meta tags (2026-03-05)
-- [x] Focus styles + aria attributes (2026-03-05)
-- [ ] Feedback da Nyres sobre visual/cores
-- [ ] Confirmar duração real das sessões (FAQ tá aproximado)
-- [ ] Adicionar fotos adicionais quando disponíveis
-- [ ] Criar páginas internas (/sobre, /pathwork, /atendimento)
+- [x] JSON-LD Schema + Twitter Cards (2026-03-05)
+- [x] prefers-reduced-motion + focus styles + aria (2026-03-05)
+- [x] Header teal-deep, labels de seção em destaque (2026-03-05)
+- [x] Seção "O Método" removida (2026-03-05)
+- [ ] FAQ expandido — elaborar perguntas com Nyres
+- [ ] Questionnaire para Nyres (identificar persona/público)
+- [ ] Conteúdo: duração das sessões, horários, valores (aguardando Nyres)
+- [ ] Páginas internas (/sobre, /pathwork, /atendimento) — futuro
