@@ -28,6 +28,9 @@
 - [ ] Enviar questionário para Nyres responder (docs/questionario-nyres.md)
 - [ ] Usar respostas para definir persona e expandir FAQ
 
+### Logo
+- [ ] Solicitar PNG da logo com fundo transparente para Nyres — header usa texto provisório (Cormorant Garamond italic)
+
 ## Resolvido
 
 - [x] Scaffold Astro 5 + Tailwind v4 (2026-03-05)
