@@ -35,7 +35,7 @@ const reels = [
           class="group block rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1"
           aria-label={reel.alt}
         >
-          <div class="relative aspect-square overflow-hidden bg-teal-deep">
+          <div class="relative aspect-[9/16] overflow-hidden bg-teal-deep">
             <Image
               src={reel.src}
               alt={reel.alt}
@@ -44,14 +44,6 @@ const reels = [
               widths={[320, 480]}
               sizes="(max-width: 768px) 100vw, 33vw"
             />
-            <!-- Play button overlay -->
-            <div class="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/30 transition-colors duration-300">
-              <div class="w-16 h-16 rounded-full bg-white/90 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
-                <svg class="w-7 h-7 text-teal-deep ml-1" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                  <path d="M8 5v14l11-7z"/>
-                </svg>
-              </div>
-            </div>
             <!-- Instagram badge -->
             <div class="absolute bottom-3 right-3 bg-white/90 rounded-full p-2 shadow-sm">
               <svg class="w-4 h-4 text-teal-deep" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
