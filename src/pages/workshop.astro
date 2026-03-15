@@ -65,9 +65,8 @@ import WhatsAppButton from '../components/WhatsAppButton.astro';
             "Comparação com os outros",
             "Dificuldade de simplesmente relaxar em quem somos",
           ].map(item => (
-            <li class="flex items-start gap-3 bg-white rounded-xl px-6 py-4 shadow-sm">
-              <span class="text-teal-deep mt-1">✦</span>
-              <span class="text-brown">{item}</span>
+            <li class="bg-white rounded-xl px-6 py-4 shadow-sm text-brown">
+              {item}
             </li>
           ))}
         </ul>
@@ -116,8 +115,7 @@ import WhatsAppButton from '../components/WhatsAppButton.astro';
             "Explorar, através de experiências guiadas, uma presença mais autêntica consigo mesmo",
             "Acessar um lugar interior onde o valor não depende de desempenho",
           ].map(item => (
-            <div class="bg-cream rounded-xl px-6 py-5 flex gap-4 items-start">
-              <span class="text-teal-deep text-xl mt-0.5">✦</span>
+            <div class="bg-cream rounded-xl px-6 py-5">
               <p class="text-brown text-base leading-relaxed">{item}</p>
             </div>
           ))}
