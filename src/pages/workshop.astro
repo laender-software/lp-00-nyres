@@ -1,0 +1,373 @@
+---
+import Layout from '../layouts/Layout.astro';
+import WhatsAppButton from '../components/WhatsAppButton.astro';
+---
+
+<Layout
+  title="Workshop — A Coragem de Ser, Sem Provar Nada | Nyres Edim"
+  description="Um workshop vivencial sobre valor, autenticidade e presença. 18 de abril de 2026, sábado, das 9h às 18h. A 35 km de Belo Horizonte. Vagas limitadas."
+>
+  <main class="overflow-hidden">
+
+    <!-- ===== HERO ===== -->
+    <section class="relative min-h-screen flex items-end bg-dark overflow-hidden">
+      <img
+        src="/images/workshop/foto-topo.jpeg"
+        alt="Espaço do workshop na natureza"
+        class="absolute inset-0 w-full h-full object-cover opacity-50"
+      />
+      <div class="absolute inset-0 bg-gradient-to-t from-dark via-dark/60 to-transparent"></div>
+      <div class="relative z-10 max-w-3xl mx-auto px-6 pb-20 md:pb-32 text-center md:text-left">
+        <p class="text-teal-soft font-sans font-bold uppercase tracking-[0.2em] text-sm mb-4">Workshop Vivencial • 18 de Abril de 2026</p>
+        <h1 class="font-serif text-4xl md:text-6xl lg:text-7xl font-semibold text-white leading-tight mb-6">
+          A coragem de ser,<br/><span class="text-teal-soft">sem provar nada</span>
+        </h1>
+        <p class="text-white/80 text-lg md:text-xl leading-relaxed mb-10 max-w-xl">
+          Um workshop vivencial sobre valor, autenticidade e presença.
+        </p>
+        <a
+          href="#inscricao"
+          class="inline-block bg-teal-deep text-white px-10 py-4 rounded-full font-semibold text-lg hover:bg-teal transition-all focus:outline-none focus:ring-2 focus:ring-teal-deep focus:ring-offset-2"
+        >
+          Quero participar
+        </a>
+      </div>
+    </section>
+
+    <!-- ===== A DOR ===== -->
+    <section class="bg-cream py-24 px-6">
+      <div class="max-w-3xl mx-auto text-center reveal">
+        <p class="text-teal-deep font-bold uppercase tracking-[0.2em] text-sm mb-6">Você se reconhece?</p>
+        <h2 class="font-serif text-3xl md:text-4xl font-semibold text-brown leading-snug mb-10">
+          Desde cedo, muitos de nós aprendemos que o valor precisa ser conquistado.
+        </h2>
+        <div class="grid md:grid-cols-3 gap-4 mb-10 text-left">
+          {["Ser bom.", "Ser forte.", "Ser especial.", "Ser admirado.", "Ser necessário.", "Ser suficiente."].map(item => (
+            <div class="bg-warm rounded-xl px-6 py-4 font-serif text-brown text-lg italic">
+              {item}
+            </div>
+          ))}
+        </div>
+        <p class="text-brown-light text-lg leading-relaxed mb-6">
+          E assim começamos a viver tentando corresponder a expectativas — externas ou internas. Mas quando o valor depende do que fazemos, alcançamos ou mostramos, algo dentro de nós nunca descansa completamente.
+        </p>
+        <p class="text-brown font-semibold text-xl font-serif italic">Porque sempre parece possível fazer mais.</p>
+      </div>
+
+      <div class="max-w-2xl mx-auto mt-14 reveal">
+        <p class="text-brown-light text-center text-base mb-8">Esse movimento pode aparecer como:</p>
+        <ul class="space-y-3">
+          {[
+            "Autocobrança constante",
+            "Medo de não ser suficiente",
+            "Necessidade de reconhecimento",
+            "Comparação com os outros",
+            "Dificuldade de simplesmente relaxar em quem somos",
+          ].map(item => (
+            <li class="flex items-start gap-3 bg-white rounded-xl px-6 py-4 shadow-sm">
+              <span class="text-teal-deep mt-1">✦</span>
+              <span class="text-brown">{item}</span>
+            </li>
+          ))}
+        </ul>
+        <p class="text-center text-brown-light mt-8 italic font-serif text-lg">Com o tempo, viver assim pode se tornar exaustivo.</p>
+      </div>
+    </section>
+
+    <!-- ===== NOVA POSSIBILIDADE ===== -->
+    <section class="bg-teal-deep py-24 px-6 text-white text-center">
+      <div class="max-w-2xl mx-auto reveal">
+        <p class="text-teal-soft font-bold uppercase tracking-[0.2em] text-sm mb-6">Mas existe outro caminho.</p>
+        <h2 class="font-serif text-3xl md:text-4xl font-semibold leading-snug mb-8">
+          Um lugar interior onde o valor não precisa ser conquistado.
+        </h2>
+        <p class="text-white/80 text-lg leading-relaxed mb-6">
+          Um lugar onde a dignidade de existir não depende de desempenho, aprovação ou comparação. Onde a dignidade não é uma moeda, não é um prêmio, não é uma recompensa.
+        </p>
+        <p class="text-teal-soft font-serif text-2xl italic mb-10">É uma qualidade essencial do seu ser.</p>
+        <p class="text-white/80 text-lg leading-relaxed mb-6">Acessar esse lugar não é um exercício mental. É um movimento profundo de consciência. E ele exige algo raro:</p>
+        <p class="font-serif text-3xl font-semibold text-white mt-4">coragem.</p>
+        <div class="mt-10 space-y-3 text-white/80 text-base italic font-serif">
+          <p>Coragem de olhar para si mesmo.</p>
+          <p>Coragem de reconhecer os padrões que sustentam a necessidade de se provar.</p>
+          <p>Coragem de permitir que algo mais verdadeiro apareça.</p>
+          <p class="text-teal-soft font-semibold not-italic">Coragem de reconhecer sua essência pura, inteira, verdadeira.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== O QUE É O WORKSHOP ===== -->
+    <section class="bg-warm py-24 px-6">
+      <div class="max-w-3xl mx-auto reveal">
+        <p class="text-teal-deep font-bold uppercase tracking-[0.2em] text-sm mb-4 text-center">O encontro</p>
+        <h2 class="font-serif text-3xl md:text-4xl font-semibold text-brown text-center leading-snug mb-10">
+          Um encontro vivencial dedicado à investigação da relação que temos com o próprio valor.
+        </h2>
+        <p class="text-brown-light text-lg leading-relaxed mb-10 text-center">
+          Ao longo do encontro, você será convidado a olhar com mais clareza para os padrões internos que sustentam a necessidade de se provar — e a experimentar uma forma mais autêntica de estar consigo mesmo.
+        </p>
+
+        <div class="grid md:grid-cols-2 gap-6 mb-12">
+          {[
+            "Reconhecer os padrões internos de autoexigência e necessidade de validação",
+            "Investigar crenças profundas sobre valor pessoal",
+            "Entrar em contato com emoções muitas vezes escondidas por trás da necessidade de se provar",
+            "Explorar, através de experiências guiadas, uma presença mais autêntica consigo mesmo",
+            "Acessar um lugar interior onde o valor não depende de desempenho",
+          ].map(item => (
+            <div class="bg-cream rounded-xl px-6 py-5 flex gap-4 items-start">
+              <span class="text-teal-deep text-xl mt-0.5">✦</span>
+              <p class="text-brown text-base leading-relaxed">{item}</p>
+            </div>
+          ))}
+        </div>
+
+        <div class="bg-teal-deep/10 border border-teal-deep/20 rounded-2xl p-8 text-center">
+          <h3 class="font-serif text-xl font-semibold text-teal-deep mb-4">Por que este encontro é diferente</h3>
+          <p class="text-brown-light leading-relaxed">
+            Este workshop não foi criado como um curso de conteúdo ou técnicas. Ele nasce da compreensão de que certos movimentos interiores não se transformam apenas com explicações ou ideias. A mudança acontece quando temos espaço para olhar para nós mesmos com mais profundidade, honestidade e presença.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PARA QUEM É ===== -->
+    <section class="bg-cream py-24 px-6">
+      <div class="max-w-2xl mx-auto reveal">
+        <p class="text-teal-deep font-bold uppercase tracking-[0.2em] text-sm mb-4 text-center">Para quem é</p>
+        <h2 class="font-serif text-3xl font-semibold text-brown text-center mb-10">
+          Este encontro pode ser especialmente significativo para quem:
+        </h2>
+        <ul class="space-y-4">
+          {[
+            "Sente que vive se cobrando demais",
+            "Percebe uma necessidade constante de se provar",
+            "Tem dificuldade de reconhecer o próprio valor",
+            "Sente que está sempre tentando corresponder às expectativas",
+            "Deseja viver com mais verdade, leveza e autenticidade",
+          ].map(item => (
+            <li class="flex items-center gap-4 bg-white rounded-xl px-6 py-5 shadow-sm">
+              <span class="w-2 h-2 rounded-full bg-teal-deep flex-shrink-0"></span>
+              <span class="text-brown">{item}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== O AMBIENTE ===== -->
+    <section class="bg-dark py-24 px-6">
+      <div class="max-w-5xl mx-auto">
+        <div class="text-center mb-12 reveal">
+          <p class="text-teal-soft font-bold uppercase tracking-[0.2em] text-sm mb-4">O espaço</p>
+          <h2 class="font-serif text-3xl md:text-4xl font-semibold text-white leading-snug mb-6">
+            Um ambiente que naturalmente<br/>favorece o trabalho interior.
+          </h2>
+          <p class="text-white/70 text-lg max-w-2xl mx-auto leading-relaxed">
+            Um lindo espaço cercado pela natureza, a apenas 35 km de Belo Horizonte. Um ambiente de silêncio, beleza e acolhimento, onde é possível desacelerar, respirar e se reconectar consigo mesmo.
+          </p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-4 reveal">
+          <img src="/images/workshop/foto-local-1.jpeg" alt="Espaço do workshop" class="w-full h-64 object-cover rounded-2xl" />
+          <img src="/images/workshop/foto-local-2.jpeg" alt="Espaço do workshop" class="w-full h-64 object-cover rounded-2xl" />
+          <img src="/images/workshop/foto-local-3.jpeg" alt="Espaço do workshop" class="w-full h-64 object-cover rounded-2xl" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== QUEM CONDUZ ===== -->
+    <section class="bg-warm py-24 px-6">
+      <div class="max-w-4xl mx-auto">
+        <div class="text-center mb-14 reveal">
+          <p class="text-teal-deep font-bold uppercase tracking-[0.2em] text-sm mb-4">Facilitadoras</p>
+          <h2 class="font-serif text-3xl font-semibold text-brown">Quem conduz este encontro</h2>
+        </div>
+
+        <!-- Nyres -->
+        <div class="flex flex-col md:flex-row gap-10 items-center bg-cream rounded-2xl p-8 mb-8 reveal">
+          <img
+            src="/images/workshop/foto-nyres.jpg"
+            alt="Nyres Edim"
+            class="w-40 h-40 rounded-full object-cover object-top flex-shrink-0 shadow-lg"
+          />
+          <div>
+            <h3 class="font-serif text-2xl font-semibold text-brown mb-1">Nyres Edim</h3>
+            <p class="text-teal-deep font-semibold text-sm mb-4">Terapeuta Pathwork® e Facilitadora</p>
+            <p class="text-brown-light leading-relaxed">
+              Formada pela Fundação Internacional Pathwork e pelo Instituto Pathwork de MG nas etapas Facilitadora e Helpership. Formada em Constelação Familiar pelo Hellinger-Institut Landshut. Certificada em Psicologia Analítica.
+            </p>
+            <p class="text-brown-light leading-relaxed mt-3">
+              Com mais de 25 anos de estudos, há mais de 10 anos acompanha pessoas em processos de transformação, ampliando a consciência sobre si mesmas, suas emoções e suas relações.
+            </p>
+          </div>
+        </div>
+
+        <!-- Claudia -->
+        <div class="flex flex-col md:flex-row gap-10 items-center bg-cream rounded-2xl p-8 reveal">
+          <img
+            src="/images/workshop/foto-claudia.jpg"
+            alt="Claudia Veloso"
+            class="w-40 h-40 rounded-full object-cover object-top flex-shrink-0 shadow-lg"
+          />
+          <div>
+            <h3 class="font-serif text-2xl font-semibold text-brown mb-1">Claudia Veloso</h3>
+            <p class="text-teal-deep font-semibold text-sm mb-4">Terapeuta Corporal e Facilitadora</p>
+            <p class="text-brown-light leading-relaxed">
+              Graduada em Educação Física, com formação em Terapia Corporal Reichiana, Pós em Análise Bioenergética e certificada em abordagens que estimulam a Fáscia (Método Ayama e Move Flow).
+            </p>
+            <p class="text-brown-light leading-relaxed mt-3">
+              Percebeu que o movimento não se limita à dimensão física. Nas suas formações encontrou um caminho que integra corpo, emoções, mente e energia – o Movimento Terapêutico.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== INSCRIÇÃO / INVESTIMENTO ===== -->
+    <section id="inscricao" class="bg-teal-deep py-24 px-6 text-white text-center">
+      <div class="max-w-2xl mx-auto reveal">
+        <p class="text-teal-soft font-bold uppercase tracking-[0.2em] text-sm mb-6">Informações</p>
+        <h2 class="font-serif text-3xl md:text-4xl font-semibold mb-10">Garanta sua vaga</h2>
+
+        <div class="grid md:grid-cols-3 gap-6 mb-10">
+          <div class="bg-white/10 rounded-2xl p-6">
+            <p class="text-3xl mb-2">📅</p>
+            <p class="font-semibold">18 de abril de 2026</p>
+            <p class="text-teal-soft text-sm mt-1">Sábado</p>
+          </div>
+          <div class="bg-white/10 rounded-2xl p-6">
+            <p class="text-3xl mb-2">🕘</p>
+            <p class="font-semibold">das 9h às 18h</p>
+            <p class="text-teal-soft text-sm mt-1">Dia completo</p>
+          </div>
+          <div class="bg-white/10 rounded-2xl p-6">
+            <p class="text-3xl mb-2">📍</p>
+            <p class="font-semibold">Sítio na natureza</p>
+            <p class="text-teal-soft text-sm mt-1">A 35 km de BH</p>
+          </div>
+        </div>
+
+        <div class="bg-white/10 rounded-2xl p-8 mb-10">
+          <p class="text-teal-soft text-sm uppercase tracking-widest mb-2">Investimento</p>
+          <p class="font-serif text-5xl font-semibold mb-2">R$ 530</p>
+          <p class="text-white/70 text-sm">ou até 3× de R$ 177,00 sem juros no cartão</p>
+          <p class="text-white/60 text-xs mt-3">Inclui lanche leve pela manhã e lanche colonial à tarde.<br/>Vagas limitadas — máximo 12 participantes.</p>
+        </div>
+
+        <a
+          href="https://wa.me/5531988270757?text=Olá%20Nyres!%20Tenho%20interesse%20no%20workshop%20A%20Coragem%20de%20Ser."
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-block bg-white text-teal-deep px-12 py-5 rounded-full font-semibold text-xl hover:bg-teal-soft transition-all focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2"
+        >
+          Reservar minha vaga
+        </a>
+        <p class="text-white/50 text-sm mt-4">Após a inscrição, você receberá um link de pagamento para confirmação da vaga.</p>
+      </div>
+    </section>
+
+    <!-- ===== CONVITE FINAL ===== -->
+    <section class="bg-cream py-24 px-6 text-center">
+      <div class="max-w-2xl mx-auto reveal">
+        <h2 class="font-serif text-3xl md:text-4xl font-semibold text-brown leading-snug mb-8">
+          Talvez uma das maiores liberdades da vida seja perceber que o valor que passamos tanto tempo tentando provar nunca precisou ser conquistado.
+        </h2>
+        <p class="text-teal-deep font-serif text-2xl italic mb-10">Ele sempre esteve presente, esperando ser descoberto.</p>
+        <p class="text-brown-light text-lg leading-relaxed mb-10">
+          Este workshop é um convite para olhar para essa possibilidade com coragem. Se você sente que esse chamado faz sentido para você, será um prazer compartilhar esse encontro.
+        </p>
+        <a
+          href="#inscricao"
+          class="inline-block bg-teal-deep text-white px-10 py-4 rounded-full font-semibold text-lg hover:bg-teal transition-all"
+        >
+          Quero participar do workshop
+        </a>
+      </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section class="bg-warm py-24 px-6">
+      <div class="max-w-2xl mx-auto reveal">
+        <h2 class="font-serif text-3xl font-semibold text-brown text-center mb-12">Perguntas Frequentes</h2>
+        <div class="space-y-4" id="faq-workshop">
+          {[
+            {
+              q: "O workshop é terapêutico?",
+              a: "O workshop tem caráter vivencial e de autoconhecimento que potencializa qualquer processo terapêutico anterior. Ele convida à investigação interior e à ampliação da consciência sobre padrões emocionais e crenças relacionadas ao próprio valor."
+            },
+            {
+              q: "Preciso ter experiência prévia em autoconhecimento ou Pathwork?",
+              a: "Não. O encontro é acessível tanto para quem já trilha um caminho de autoconhecimento quanto para quem está começando. As atividades são conduzidas de forma gradual e respeitando o ritmo de cada participante."
+            },
+            {
+              q: "O que acontece durante o workshop?",
+              a: "O encontro envolve momentos de movimentos corporais, reflexão guiada, investigação interior, partilhas e experiências vivenciais que ajudam a acessar aspectos mais profundos da relação que temos com o próprio valor. Tudo é conduzido com cuidado, respeito e atenção ao processo de cada participante."
+            },
+            {
+              q: "Vou precisar compartilhar coisas pessoais?",
+              a: "A participação nas atividades é sempre voluntária. Você é livre para compartilhar apenas aquilo que se sentir confortável em expressar. Criamos um ambiente de respeito e confidencialidade para que cada pessoa possa participar de forma autêntica e segura."
+            },
+            {
+              q: "O workshop envolve trabalho corporal?",
+              a: "Sim, inclui exercícios simples de percepção corporal, pois muitas experiências emocionais também se manifestam no corpo. Não é necessário preparo físico ou experiência prévia."
+            },
+            {
+              q: "Como é o acesso ao local?",
+              a: "Após a inscrição, criaremos um grupo para compartilhar informações sobre o encontro e facilitar combinações de carona. O acesso por Uber também é fácil e acessível, sobretudo se for compartilhado."
+            },
+            {
+              q: "O workshop inclui alimentação?",
+              a: "Inclui lanche leve pela manhã e delicioso lanche colonial à tarde. Para o almoço sugerimos restaurante bem próximo (self-service), cujo valor não está incluído."
+            },
+            {
+              q: "E se eu me inscrever e não puder comparecer?",
+              a: "Caso você não possa comparecer, pedimos que nos avise com antecedência. Dependendo do prazo, será possível transferir sua vaga para outra pessoa ou utilizar o valor em um próximo evento."
+            },
+          ].map((item, i) => (
+            <details class="bg-cream rounded-xl group">
+              <summary class="px-6 py-5 cursor-pointer font-semibold text-brown list-none flex items-center justify-between gap-4">
+                {item.q}
+                <span class="text-teal-deep text-xl transition-transform group-open:rotate-45 flex-shrink-0">+</span>
+              </summary>
+              <p class="px-6 pb-5 text-brown-light leading-relaxed">{item.a}</p>
+            </details>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FOOTER SIMPLES ===== -->
+    <footer class="bg-dark text-white/50 py-8 text-center text-sm">
+      <p>© 2026 Nyres Edim — <a href="/" class="hover:text-white transition-colors">nyresedim.com.br</a></p>
+    </footer>
+
+  </main>
+
+  <WhatsAppButton />
+</Layout>
+
+<script>
+  // Scroll reveal
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('visible');
+        observer.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+</script>
+
+<style>
+  .reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.9s cubic-bezier(0.22, 1, 0.36, 1), transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  details summary::-webkit-details-marker { display: none; }
+</style>
