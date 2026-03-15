@@ -41,13 +41,14 @@ import WhatsAppButton from '../components/WhatsAppButton.astro';
         <h2 class="font-serif text-3xl md:text-4xl font-semibold text-brown leading-snug mb-10">
           Desde cedo, muitos de nós aprendemos que o valor precisa ser conquistado.
         </h2>
-        <div class="grid md:grid-cols-3 gap-4 mb-10 text-left">
+        <ul class="space-y-2 mb-10 text-left max-w-xs mx-auto">
           {["Ser bom.", "Ser forte.", "Ser especial.", "Ser admirado.", "Ser necessário.", "Ser suficiente."].map(item => (
-            <div class="bg-warm rounded-xl px-6 py-4 font-serif text-brown text-lg italic">
+            <li class="flex items-center gap-3 font-serif text-brown text-lg italic">
+              <span class="w-2 h-2 rounded-full bg-teal-deep flex-shrink-0"></span>
               {item}
-            </div>
+            </li>
           ))}
-        </div>
+        </ul>
         <p class="text-brown-light text-lg leading-relaxed mb-6">
           E assim começamos a viver tentando corresponder a expectativas — externas ou internas. Mas quando o valor depende do que fazemos, alcançamos ou mostramos, algo dentro de nós nunca descansa completamente.
         </p>
@@ -167,7 +168,8 @@ import WhatsAppButton from '../components/WhatsAppButton.astro';
             Um lindo espaço cercado pela natureza, a apenas 35 km de Belo Horizonte. Um ambiente de silêncio, beleza e acolhimento, onde é possível desacelerar, respirar e se reconectar consigo mesmo.
           </p>
         </div>
-        <div class="grid md:grid-cols-3 gap-4 reveal">
+        <div class="grid md:grid-cols-4 gap-4 reveal">
+          <img src="/images/workshop/foto-topo.jpeg" alt="Espaço do workshop" class="w-full h-64 object-cover rounded-2xl" />
           <img src="/images/workshop/foto-local-1.jpeg" alt="Espaço do workshop" class="w-full h-64 object-cover rounded-2xl" />
           <img src="/images/workshop/foto-local-2.jpeg" alt="Espaço do workshop" class="w-full h-64 object-cover rounded-2xl" />
           <img src="/images/workshop/foto-local-3.jpeg" alt="Espaço do workshop" class="w-full h-64 object-cover rounded-2xl" />
