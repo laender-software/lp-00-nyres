@@ -1,6 +1,12 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import WhatsAppButton from '../components/WhatsAppButton.astro';
+import { Image } from 'astro:assets';
+import fotoTopo from '../assets/images/workshop-topo.jpeg';
+import fotoNyres from '../assets/images/workshop-nyres.jpg';
+import fotoClaudia from '../assets/images/workshop-claudia.jpg';
+import fotoLocal1 from '../assets/images/workshop-local-1.jpeg';
+import fotoLocal2 from '../assets/images/workshop-local-2.jpeg';
 ---
 
 <Layout
@@ -11,12 +17,14 @@ import WhatsAppButton from '../components/WhatsAppButton.astro';
 
     <!-- ===== HERO ===== -->
     <section class="relative min-h-[75vh] flex items-end bg-dark overflow-hidden">
-      <img
-        src="/images/workshop/foto-topo.jpeg"
+      <Image
+        src={fotoTopo}
         alt="Espaço do workshop na natureza"
         class="absolute inset-0 w-full h-full object-cover opacity-75"
         fetchpriority="high"
         loading="eager"
+        widths={[800, 1200, 1600]}
+        sizes="100vw"
       />
       <div class="absolute inset-0 bg-gradient-to-t from-dark/90 via-dark/30 to-transparent"></div>
       <div class="relative z-10 max-w-3xl mx-auto px-6 pb-20 md:pb-32 text-center">
@@ -168,9 +176,9 @@ import WhatsAppButton from '../components/WhatsAppButton.astro';
           </p>
         </div>
         <div class="grid md:grid-cols-3 gap-4 reveal">
-          <img src="/images/workshop/foto-local-1.jpeg" alt="Espaço do workshop" class="w-full h-64 object-cover rounded-2xl cursor-pointer lightbox-trigger hover:opacity-90 transition-opacity" loading="lazy" />
-          <img src="/images/workshop/foto-local-2.jpeg" alt="Espaço do workshop" class="w-full h-64 object-cover rounded-2xl cursor-pointer lightbox-trigger hover:opacity-90 transition-opacity" loading="lazy" />
-          <img src="/images/workshop/foto-topo.jpeg" alt="Espaço do workshop" class="w-full h-64 object-cover rounded-2xl cursor-pointer lightbox-trigger hover:opacity-90 transition-opacity" loading="lazy" />
+          <Image src={fotoLocal1} alt="Espaço do workshop" class="w-full h-64 object-cover rounded-2xl cursor-pointer lightbox-trigger hover:opacity-90 transition-opacity" loading="lazy" widths={[400, 700]} sizes="(max-width: 768px) 100vw, 33vw" />
+          <Image src={fotoLocal2} alt="Espaço do workshop" class="w-full h-64 object-cover rounded-2xl cursor-pointer lightbox-trigger hover:opacity-90 transition-opacity" loading="lazy" widths={[400, 700]} sizes="(max-width: 768px) 100vw, 33vw" />
+          <Image src={fotoTopo} alt="Espaço do workshop" class="w-full h-64 object-cover rounded-2xl cursor-pointer lightbox-trigger hover:opacity-90 transition-opacity" loading="lazy" widths={[400, 700]} sizes="(max-width: 768px) 100vw, 33vw" />
         </div>
 
         <!-- Lightbox -->
@@ -191,10 +199,13 @@ import WhatsAppButton from '../components/WhatsAppButton.astro';
 
         <!-- Nyres -->
         <div class="flex flex-col md:flex-row gap-10 items-center bg-cream rounded-2xl p-8 mb-8 reveal">
-          <img
-            src="/images/workshop/foto-nyres-nova.jpg"
+          <Image
+            src={fotoNyres}
             alt="Nyres Edim"
             class="w-40 h-40 rounded-full object-cover object-top flex-shrink-0 shadow-lg"
+            width={160}
+            height={160}
+            loading="lazy"
           />
           <div>
             <h3 class="font-serif text-2xl font-semibold text-brown mb-1">Nyres Edim</h3>
@@ -210,10 +221,13 @@ import WhatsAppButton from '../components/WhatsAppButton.astro';
 
         <!-- Claudia -->
         <div class="flex flex-col md:flex-row gap-10 items-center bg-cream rounded-2xl p-8 reveal">
-          <img
-            src="/images/workshop/foto-claudia.jpg"
+          <Image
+            src={fotoClaudia}
             alt="Claudia Veloso"
             class="w-40 h-40 rounded-full object-cover object-top flex-shrink-0 shadow-lg"
+            width={160}
+            height={160}
+            loading="lazy"
           />
           <div>
             <h3 class="font-serif text-2xl font-semibold text-brown mb-1">Claudia Veloso</h3>
