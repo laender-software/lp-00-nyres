@@ -2,11 +2,13 @@
 interface Props {
   title?: string;
   description?: string;
+  ogImage?: string;
 }
 
 const {
   title = "Nyres Edim | Terapeuta Pathwork® — Autoconhecimento e Espiritualidade",
-  description = "Transforme padrões emocionais com o Método Pathwork®. Mais de 25 anos de experiência. Atendimento individual e grupos de estudos. Presencial em BH e online."
+  description = "Transforme padrões emocionais com o Método Pathwork®. Mais de 25 anos de experiência. Atendimento individual e grupos de estudos. Presencial em BH e online.",
+  ogImage = "https://nyresedim.com.br/images/foto-profissional-1.jpg",
 } = Astro.props;
 ---
 
@@ -24,13 +26,13 @@ const {
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://nyresedim.com.br" />
   <meta property="og:locale" content="pt_BR" />
-  <meta property="og:image" content="https://nyresedim.com.br/images/foto-profissional-1.jpg" />
+  <meta property="og:image" content={ogImage} />
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content={title} />
   <meta name="twitter:description" content={description} />
-  <meta name="twitter:image" content="https://nyresedim.com.br/images/foto-profissional-1.jpg" />
+  <meta name="twitter:image" content={ogImage} />
 
   <!-- JSON-LD Structured Data -->
   <script type="application/ld+json" set:html={JSON.stringify([
