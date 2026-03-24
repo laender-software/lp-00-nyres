@@ -307,6 +307,36 @@ import fotoLocal2 from '../assets/images/workshop-local-2.jpeg';
       </div>
     </section>
 
+    <!-- ===== DEPOIMENTOS ===== -->
+    <section class="bg-cream py-24 px-6">
+      <div class="max-w-4xl mx-auto">
+        <div class="text-center mb-14 reveal">
+          <p class="text-teal-deep font-bold uppercase tracking-[0.2em] text-sm mb-4">Depoimentos</p>
+          <h2 class="font-serif text-3xl font-semibold text-brown">O que dizem quem viveu este encontro</h2>
+        </div>
+        <div class="grid md:grid-cols-2 gap-8 reveal">
+          {[
+            {
+              texto: "A vivência foi libertadora. Trouxe luz e clareza sobre uma área da minha vida que sempre me gerou muito sofrimento. Todas as atividades se integraram perfeitamente de uma forma que parece inexplicável. É, realmente, algo Divino de Se Viver.",
+              autor: "Jeannifer"
+            },
+            {
+              texto: "Nossa vivência aconteceu de forma muito segura, confortável e positiva de modo que me permitiu sensorialmente internalizar e descobrir sensações e emoções profundas que me causam grandes movimentos internos. Aqui certamente aceitei mais aspectos de mim mesmo, saio mais leve e mais consciente das minhas imagens criadas.",
+              autor: "Lucas Bahiense"
+            },
+          ].map((dep) => (
+            <div class="bg-white rounded-2xl p-8 shadow-sm border border-sand/30">
+              <svg class="w-8 h-8 text-sand mb-4" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+              </svg>
+              <p class="text-brown-light leading-relaxed mb-6 italic font-serif text-lg">"{dep.texto}"</p>
+              <p class="font-semibold text-teal-deep">— {dep.autor}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
     <!-- ===== FAQ ===== -->
     <section class="bg-warm py-24 px-6">
       <div class="max-w-2xl mx-auto reveal">
