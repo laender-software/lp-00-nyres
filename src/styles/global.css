@@ -20,7 +20,7 @@ html {
   --color-dark: #1A1A1A;
   --color-white: #FFFFFF;
 
-  --font-serif: 'Georgia', 'Cormorant Garamond', 'Playfair Display', serif;
+  --font-serif: 'Cormorant Garamond', 'Playfair Display', 'Georgia', serif;
   --font-sans: 'Lato', 'Inter', system-ui, sans-serif;
 }
 
