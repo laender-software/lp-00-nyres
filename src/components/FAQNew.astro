@@ -31,7 +31,7 @@ const perguntas = [
     <div class="space-y-4">
       {perguntas.map((item, i) => (
         <details class="reveal group bg-warm rounded-xl border border-sand/30 overflow-hidden" style={`transition-delay: ${i * 50}ms`}>
-          <summary class="flex items-center justify-between cursor-pointer px-6 py-5 font-semibold text-brown hover:text-teal-deep transition-colors focus:outline-none focus:ring-2 focus:ring-teal-deep focus:ring-inset rounded-xl">
+          <summary class="flex items-center justify-between cursor-pointer px-6 py-5 font-semibold text-brown hover:text-teal-deep transition-colors focus:outline-none rounded-xl">
             {item.pergunta}
             <svg class="w-5 h-5 text-teal flex-shrink-0 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
