@@ -408,10 +408,12 @@ import fotoLocal2 from '../assets/images/workshop-local-2.jpeg';
               a: "Caso você não possa comparecer, pedimos que nos avise com antecedência. Dependendo do prazo, será possível transferir sua vaga para outra pessoa ou utilizar o valor em um próximo evento."
             },
           ].map((item, i) => (
-            <details class="bg-cream rounded-xl group hover:bg-warm transition-colors">
-              <summary class="px-6 py-5 cursor-pointer font-semibold text-brown list-none flex items-center justify-between gap-4 hover:text-teal-deep transition-colors">
+            <details class="bg-warm rounded-xl border border-sand/30 overflow-hidden group">
+              <summary class="flex items-center justify-between cursor-pointer px-6 py-5 font-semibold text-brown hover:text-teal-deep transition-colors focus:outline-none list-none">
                 {item.q}
-                <span class="text-teal-deep text-xl transition-transform group-open:rotate-45 flex-shrink-0">+</span>
+                <svg class="w-5 h-5 text-teal flex-shrink-0 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
               </summary>
               <p class="px-6 pb-5 text-brown-light leading-relaxed">{item.a}</p>
             </details>
